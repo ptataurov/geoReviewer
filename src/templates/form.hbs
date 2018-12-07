@@ -1,0 +1,29 @@
+<div class="reviews">
+    <header class="reviews__header">
+        <p class="reviews__address">{{ address }}</p>
+        <span class="reviews__btn-close"></span>
+    </header>
+    <ul class="reviews__list">
+        {{#each reviews}}
+            <li class="reviews__item reviews-item">
+                <h4 class="reviews-item__info">
+                    <span class="reviews-item__name">{{ name }}</span>{{ place }} {{ date }}
+                </h4>
+                <p class="reviews-item__body">{{ comment }}</p>
+            </li>
+        {{/each}}
+    </ul>
+    <div class="reviews__form reviews-form">
+        <p class="reviews-form__title">Ваш отзыв</p>
+        <input type="text"
+               class="reviews-form__name"
+               placeholder="Ваше имя">
+        <input type="text"
+               class="reviews-form__place"
+               placeholder="Укажите место">
+        <textarea cols="30" rows="5"
+                  class="reviews-form__comment"
+                  placeholder="Поделитесь впечатлениями"></textarea>
+        <button class="reviews-form__btn">Добавить</button>
+    </div>
+</div>
