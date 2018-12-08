@@ -34,8 +34,13 @@ export default {
                 this.app.innerHTML = View.renderForm(form);
             };
             class Form {
-                constructor(coords, address) {
-                    this.address = address;
+                static async create(coords) {
+                    const form = new Form(coords);
+                    form.address = await Model.geocode(coords);
+
+                    return form;
+                }
+                constructor(coords) {
                     this.coords = coords;
                     this.reviews = [];
                 }
@@ -78,7 +83,7 @@ export default {
                 const coords = e.get('coords');
 
                 formCoords.update(e.get('domEvent').get('pageX'), e.get('domEvent').get('pageY'));
-                form = new Form(coords, await Model.geocode(coords));
+                form = await Form.create(coords);
                 render(form);
             });
 
