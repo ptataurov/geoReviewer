@@ -8,7 +8,7 @@
 
 Если добавить несколько отзывов по разным адресам, а потом отдалить карту, то будет создан кластер из отзывов.
 
-![Гео отзыв](https://media.giphy.com/media/9PgjaXzB4uqeCo7pUw/giphy.gif)
+![Гео отзыв 2](https://media.giphy.com/media/9PgjaXzB4uqeCo7pUw/giphy.gif)
 
 
 ### В проекте использовались:
