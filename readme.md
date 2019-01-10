@@ -1,4 +1,4 @@
-# Выпускной проект "Гео отзыв" курса "Комплексное обучение JavaScript" в LoftSchool
+# Проект "Гео отзыв"
 
 ### Описание проекта
 
@@ -8,10 +8,8 @@
 
 Если добавить несколько отзывов по разным адресам, а потом отдалить карту, то будет создан кластер из отзывов.
 
-![Гео отзыв 2](https://media.giphy.com/media/9PgjaXzB4uqeCo7pUw/giphy.gif)
 
-
-### В проекте использовались:
+### Стек технологий
 - Нативный JavaScript ES6+
 - Yandex Maps API
 - MVC
@@ -26,5 +24,5 @@
 $ git clone git@github.com:ptataurov/geoReviewer.git
 $ cd geoReviewer
 $ npm install
-$ npm start
+$ npm run start
 ```
